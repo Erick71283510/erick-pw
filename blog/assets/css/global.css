@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+    --title: #313131;
+    --text: #646464;
+    --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%)
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f3f5f7;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.BackToTop {
+    position: fixed;
+    bottom: 0;
+    right: 30px;
+    font-size: 40px;
+    color: #02466e;
+    visibility: hidden;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+
+.BackToTop.show {
+    visibility: visible;
+    bottom: 15px;
+    transform: translateY(0);
+}
+
+.imput-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 50%;
+
+}
+
+.imput-search i {
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+}
+
+.imput-search :where(input, textarea) {
+    width: 100%;
+    padding: 20px 0 20px 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+    outline: none;
+
+}
